@@ -3,7 +3,7 @@ pipeline{
   stages{
     stage ('EC2 creation with terraform'){
       steps{
-        sh "terraform --version"
+        sh "terraform init"
       }
     }
   }
