@@ -6,15 +6,12 @@ pipeline{
         sh "terraform init"
       }
     }
-  }
-  stages{
+  
     stage ('EC2 creation terraform plan'){
       steps{
         sh "terraform plan"
       }
     }
-  }
-  stages{
     stage ('EC2 creation terraform apply'){
       steps{
         sh "terraform apply --auto-approve"
