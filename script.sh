@@ -2,6 +2,7 @@
 git clone https://github.com/ambareeshns/work.git
 pwd
 cd work
+pwd
 mvn --version
 mvn package
 sleep 120
