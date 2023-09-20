@@ -11,7 +11,6 @@ resource "aws_instance" "nam-ec2"{
       sudo apt install -y git
       sudo apt install -y docker.io
       sudo apt install -y maven
-      sudo git ignore 
       sudo git clone https://github.com/ambareeshns/work.git
 EOF
   tags={
