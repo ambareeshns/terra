@@ -14,7 +14,7 @@ resource "aws_instance" "nam-ec2"{
       
 EOF
   tags={
-    Name="terraform"
+    Name="terraform1"
   }
 connection {
     type     = "ssh"
