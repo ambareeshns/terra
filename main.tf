@@ -28,7 +28,7 @@ provisioner "file" {
   }
 provisioner "remote-exec" {
     inline = [
-      "chmod +x /home/ubuntu/script.sh",
+      "sudo chmod +x /home/ubuntu/script.sh",
       "sh /home/ubuntu/script.sh",
     ]
   }
