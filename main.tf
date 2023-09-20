@@ -11,9 +11,18 @@ resource "aws_instance" "nam-ec2"{
       sudo apt install -y git
       sudo apt install -y docker.io
       sudo apt install -y maven
-      sudo git clone https://github.com/ambareeshns/work.git
 EOF
   tags={
     Name="terraform"
+  }
+connection {
+    type     = "ssh"
+    user     = "ubuntu"
+    private_key = file("")
+    host     = self.public_ip
+  }
+provisioner "file" {
+    source      = "script.sh"
+    destination = "/tmp/script.sh"
   }
 }
