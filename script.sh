@@ -1,6 +1,7 @@
 #! /bin/bash
 git clone https://github.com/ambareeshns/work.git
 pwd
+echo "running cd"
 cd work
 pwd
 mvn --version
