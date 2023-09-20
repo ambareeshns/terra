@@ -5,7 +5,7 @@ provider "aws"{
 resource "aws_instance" "nam-ec2"{
   ami="ami-0f5ee92e2d63afc18"
   instance_type="t2.micro"
-  key_name = "mumbai-key.pem"
+  key_name = "mumbai-key"
   user_data                   = <<-EOF
       #!/bin/sh
       sudo apt-get update
