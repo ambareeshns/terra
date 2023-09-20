@@ -11,7 +11,7 @@ resource "aws_instance" "nam-ec2"{
       sudo apt-get update
       sudo apt install -y git
       sudo apt install -y docker.io
-      sudo apt install -y maven
+      
 EOF
   tags={
     Name="terraform"
