@@ -1,10 +1,12 @@
 #! /bin/bash
+sudo apt install -y maven
+sleep 120
+mvn --version
 git clone https://github.com/ambareeshns/work.git
 pwd
 echo "running cd"
 cd work
 pwd
-mvn --version
 mvn package
 sleep 120
 sudo chmod 777 /var/run/docker.sock
